@@ -103,11 +103,9 @@ JSON-LD `url`). If you later add a custom domain, do the same again.
 ## Notes
 
 - **Accessibility:** semantic landmarks, skip-link, visible focus states, AA color
-  contrast in both themes, alt text required on project images, reduced-motion
-  respected.
+  contrast, alt text required on project images, reduced-motion respected.
 - **Fonts** load from Google Fonts (Space Grotesk / Inter / IBM Plex Mono). If you
   ever want zero third-party requests, download the .woff2 files and self-host —
   the `@font-face` swap is the only change needed.
-- **Dark mode** defaults to light, remembers the visitor's toggle in `localStorage`.
 - **Social preview image** is `assets/og.png` (1200×630). Regenerate or replace it
   any time; keep the same path.

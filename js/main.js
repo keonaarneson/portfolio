@@ -1,47 +1,16 @@
 /* ============================================================
-   Interactions: theme toggle, mobile nav, scroll-spy,
-   reveal-on-scroll, copy-email, footer year.
+   Interactions: mobile nav, scroll-spy, reveal-on-scroll,
+   copy-email, footer year.
    ============================================================ */
 
 (function () {
   "use strict";
 
   var doc = document;
-  var root = doc.documentElement;
 
   /* ---------- footer year ---------- */
   var year = doc.getElementById("year");
   if (year) year.textContent = String(new Date().getFullYear());
-
-  /* ---------- theme toggle ---------- */
-  var themeBtn = doc.querySelector(".theme-toggle");
-  var themeMeta = doc.getElementById("meta-theme-color");
-
-  function applyTheme(mode) {
-    if (mode === "dark") {
-      root.setAttribute("data-theme", "dark");
-    } else {
-      root.removeAttribute("data-theme");
-    }
-    if (themeBtn) {
-      themeBtn.setAttribute("aria-label",
-        mode === "dark" ? "Switch to light mode" : "Switch to dark mode");
-    }
-    if (themeMeta) {
-      themeMeta.setAttribute("content", mode === "dark" ? "#151311" : "#FAF9F7");
-    }
-  }
-
-  if (themeBtn) {
-    // reflect whatever the pre-paint script decided
-    applyTheme(root.getAttribute("data-theme") === "dark" ? "dark" : "light");
-
-    themeBtn.addEventListener("click", function () {
-      var next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
-      applyTheme(next);
-      try { localStorage.setItem("theme", next); } catch (e) { /* private mode etc. */ }
-    });
-  }
 
   /* ---------- mobile nav ---------- */
   var nav = doc.querySelector(".site-nav");

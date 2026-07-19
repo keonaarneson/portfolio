@@ -19,20 +19,11 @@
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
 
-  <meta name="theme-color" id="meta-theme-color" content="#FAF9F7">
+  <meta name="theme-color" content="#FAF9F7">
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 
-  <!-- Set theme + mark JS available before first paint (prevents flash) -->
-  <script>
-    (function () {
-      try {
-        if (localStorage.getItem("theme") === "dark") {
-          document.documentElement.setAttribute("data-theme", "dark");
-        }
-      } catch (e) { /* storage unavailable — stay light */ }
-      document.documentElement.className += " js";
-    })();
-  </script>
+  <!-- Mark JS availability before first paint (gates the scroll-reveal styles) -->
+  <script>document.documentElement.className += " js";</script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -85,16 +76,6 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-
-      <button class="theme-toggle" aria-label="Switch to dark mode">
-        <svg class="icon-moon" width="17" height="17" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
-          <path d="M17.5 12.4A7.5 7.5 0 0 1 7.6 2.5a7.5 7.5 0 1 0 9.9 9.9Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
-        </svg>
-        <svg class="icon-sun" width="17" height="17" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
-          <circle cx="10" cy="10" r="4" fill="none" stroke="currentColor" stroke-width="1.7"/>
-          <path d="M10 1v2.2M10 16.8V19M19 10h-2.2M3.2 10H1M16.4 3.6l-1.6 1.6M5.2 14.8l-1.6 1.6M16.4 16.4l-1.6-1.6M5.2 5.2 3.6 3.6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
-        </svg>
-      </button>
     </div>
   </header>
 
