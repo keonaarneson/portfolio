@@ -1,0 +1,10 @@
+# OS noise
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Netlify CLI state (if you ever use it)
+.netlify/
+
+# Logs
+*.log

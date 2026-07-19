@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Keona Arneson · Electrical Engineering — Power Systems &amp; Renewable Energy</title>
+  <meta name="description" content="Boise State EE student focused on power electronics, power systems, and renewable energy — PV modeling, grid-forming inverter research, and hands-on hardware.">
+
+  <!-- TODO after first deploy: replace keona-arneson.netlify.app with your real Netlify URL
+       (3 places in this file: canonical, og:url, og:image — plus the JSON-LD "url" below). -->
+  <link rel="canonical" href="https://keona-arneson.netlify.app/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://keona-arneson.netlify.app/">
+  <meta property="og:title" content="Keona Arneson · Electrical Engineering — Power Systems & Renewable Energy">
+  <meta property="og:description" content="Boise State EE student focused on power electronics, power systems, and renewable energy — PV modeling, grid-forming inverter research, and hands-on hardware.">
+  <meta property="og:image" content="https://keona-arneson.netlify.app/assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta name="theme-color" id="meta-theme-color" content="#FAF9F7">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Set theme + mark JS available before first paint (prevents flash) -->
+  <script>
+    (function () {
+      try {
+        if (localStorage.getItem("theme") === "dark") {
+          document.documentElement.setAttribute("data-theme", "dark");
+        }
+      } catch (e) { /* storage unavailable — stay light */ }
+      document.documentElement.className += " js";
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Keona Arneson",
+    "email": "mailto:arneson.keona@gmail.com",
+    "jobTitle": "Electrical Engineering Student",
+    "affiliation": { "@type": "CollegeOrUniversity", "name": "Boise State University" },
+    "url": "https://keona-arneson.netlify.app/",
+    "sameAs": [
+      "https://www.linkedin.com/in/keona-arneson/",
+      "https://github.com/keonaarneson"
+    ],
+    "knowsAbout": ["Power electronics", "Power systems", "Renewable energy", "Photovoltaics", "Grid-forming inverters"]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Keona Arneson — back to top">
+        <svg width="26" height="26" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <rect width="64" height="64" rx="14" class="brand-bg"/>
+          <path d="M8 32 Q16 12 24 32 T40 32 T56 32" fill="none" class="brand-wave" stroke-width="5" stroke-linecap="round"/>
+        </svg>
+        <span>Keona Arneson</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+          <svg width="18" height="18" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+            <path d="M2 5h16M2 10h16M2 15h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <span class="visually-hidden">Menu</span>
+        </button>
+        <ul id="nav-menu" class="nav-menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="theme-toggle" aria-label="Switch to dark mode">
+        <svg class="icon-moon" width="17" height="17" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+          <path d="M17.5 12.4A7.5 7.5 0 0 1 7.6 2.5a7.5 7.5 0 1 0 9.9 9.9Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+        </svg>
+        <svg class="icon-sun" width="17" height="17" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+          <circle cx="10" cy="10" r="4" fill="none" stroke="currentColor" stroke-width="1.7"/>
+          <path d="M10 1v2.2M10 16.8V19M19 10h-2.2M3.2 10H1M16.4 3.6l-1.6 1.6M5.2 14.8l-1.6 1.6M16.4 16.4l-1.6-1.6M5.2 5.2 3.6 3.6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <div class="container">
+        <p class="kicker mono" data-reveal style="--stagger:0">B.S. Electrical Engineering · Boise State University · Class of 2027</p>
+        <h1 data-reveal style="--stagger:1">Keona Arneson</h1>
+        <p class="hero-tagline" data-reveal style="--stagger:2">Power electronics <span class="sep" aria-hidden="true">·</span> Power systems <span class="sep" aria-hidden="true">·</span> Renewable energy</p>
+        <p class="hero-intro" data-reveal style="--stagger:3">
+          I design and model the hardware that moves clean energy — from solar-powered
+          field electronics to grid-tied PV systems and grid-forming inverters.
+        </p>
+
+        <div class="hero-actions" data-reveal style="--stagger:4">
+          <a class="btn btn-primary" href="resume/Keona-Arneson-Resume.pdf" data-site-link="resume" target="_blank" rel="noopener">Resume (PDF)</a>
+        </div>
+
+        <p class="hero-now" data-reveal style="--stagger:5">
+          <span class="now-dot" aria-hidden="true"></span>
+          Currently — Electrical Engineer Intern @ Ulteig · DER interconnection review
+        </p>
+
+        <dl class="stat-row" data-reveal style="--stagger:6">
+          <div class="stat">
+            <dt>Major GPA</dt>
+            <dd>3.70</dd>
+          </div>
+          <div class="stat">
+            <dt>Grid-tied PV system modeled in SAM</dt>
+            <dd>4.1 kW</dd>
+          </div>
+          <div class="stat">
+            <dt>DER interconnection applications reviewed weekly</dt>
+            <dd>40+</dd>
+          </div>
+          <div class="stat">
+            <dt>IEEE papers synthesized on grid-forming inverters</dt>
+            <dd>11</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <span class="section-index mono" aria-hidden="true">01</span>
+          <h2>About</h2>
+        </header>
+
+        <div class="about-grid">
+          <div class="about-text" data-reveal>
+            <p>
+              I'm a senior electrical engineering student at Boise State University
+              (B.S. expected 2027) focused on power electronics and power systems.
+              Renewable energy sits exactly where those two meet, so that's where most
+              of my work lands — photovoltaics, inverters, and the grid that ties them together.
+            </p>
+            <p>
+              Right now I'm an electrical engineering intern at Ulteig, reviewing distributed
+              energy resource (DER) interconnection applications — about 40 a week — against
+              Xcel Energy's interconnection standards. Before that, I built solar-powered field
+              hardware through Boise State's Vertically Integrated Projects program and modeled
+              residential PV economics in NREL's System Advisor Model.
+            </p>
+            <p>
+              I like working both sides of the discipline: the hands-on lab work of building and
+              debugging real hardware, and the analysis and simulation that make power systems
+              trustworthy at scale. I'm currently exploring industry roles and graduate programs
+              in power engineering.
+            </p>
+          </div>
+
+          <aside class="about-side" data-reveal>
+            <h3 class="side-label mono">Focus areas</h3>
+            <ul class="focus-list">
+              <li><strong>Power electronics</strong> — converters, inverters, and power management for real hardware</li>
+              <li><strong>Power systems</strong> — grid integration, DER interconnection, system analysis</li>
+              <li><strong>Renewable energy</strong> — PV design and economics, grid-forming control</li>
+            </ul>
+
+            <h3 class="side-label mono">Selected coursework</h3>
+            <ul class="chip-list">
+              <li class="chip">Smart Grid &amp; Renewable Energy Systems</li>
+              <li class="chip">Power System Analysis I</li>
+              <li class="chip">Power Electronics</li>
+              <li class="chip">System Modeling &amp; Control</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="section">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <span class="section-index mono" aria-hidden="true">02</span>
+          <h2>Projects</h2>
+        </header>
+        <p class="section-note" data-reveal>Full write-ups are linked where available — reports open as PDFs.</p>
+
+        <div id="project-list" class="project-list">
+          <!-- Cards are rendered from js/data.js -->
+        </div>
+        <noscript>
+          <p class="muted">JavaScript is disabled, so the project cards can't render here — every project
+          is also summarized in my <a href="resume/Keona-Arneson-Resume.pdf">resume (PDF)</a>.</p>
+        </noscript>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="section">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <span class="section-index mono" aria-hidden="true">03</span>
+          <h2>Skills</h2>
+        </header>
+
+        <div id="skills-grid" class="skills-grid">
+          <!-- Groups are rendered from js/data.js -->
+        </div>
+        <noscript>
+          <p class="muted">Skills are listed in my <a href="resume/Keona-Arneson-Resume.pdf">resume (PDF)</a>.</p>
+        </noscript>
+      </div>
+    </section>
+
+    <!-- ============ RESUME ============ -->
+    <section id="resume" class="section">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <span class="section-index mono" aria-hidden="true">04</span>
+          <h2>Resume</h2>
+        </header>
+
+        <div class="resume-actions" data-reveal>
+          <a class="btn btn-primary" href="resume/Keona-Arneson-Resume.pdf" download="Keona-Arneson-Resume.pdf">Download resume (PDF)</a>
+          <a class="btn" href="resume/Keona-Arneson-Resume.pdf" target="_blank" rel="noopener">Open in new tab<span class="ext" aria-hidden="true">&nbsp;↗</span></a>
+        </div>
+
+        <div class="resume-embed" data-reveal>
+          <object data="resume/Keona-Arneson-Resume.pdf" type="application/pdf" aria-label="Embedded resume PDF viewer">
+            <p class="embed-fallback muted">
+              Your browser can't display embedded PDFs —
+              <a href="resume/Keona-Arneson-Resume.pdf">download the resume</a> instead.
+            </p>
+          </object>
+        </div>
+        <p class="resume-mobile-note muted">On a phone, the download button above is the easy path — the embedded viewer is hidden on small screens.</p>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <span class="section-index mono" aria-hidden="true">05</span>
+          <h2>Contact</h2>
+        </header>
+
+        <p class="contact-lede" data-reveal>
+          I'm interested in power-industry roles, internships, and graduate programs —
+          and always glad to talk renewables, inverters, or nest-box cameras.
+        </p>
+
+        <div class="contact-email" data-reveal>
+          <a class="email-big" href="mailto:arneson.keona@gmail.com" data-site-link="email">arneson.keona@gmail.com</a>
+          <button class="btn copy-email" data-email="arneson.keona@gmail.com">Copy address</button>
+          <span class="copy-status visually-hidden" role="status" aria-live="polite"></span>
+        </div>
+
+        <ul class="contact-links" data-reveal>
+          <li><a class="text-link" href="https://www.linkedin.com/in/keona-arneson/" data-site-link="linkedin" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a></li>
+          <li><a class="text-link" href="https://github.com/keonaarneson" data-site-link="github" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a></li>
+          <li><a class="text-link" href="resume/Keona-Arneson-Resume.pdf" data-site-link="resume" target="_blank" rel="noopener">Resume (PDF)</a></li>
+        </ul>
+
+        <p class="contact-loc muted" data-reveal>Based in Meridian, Idaho.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© <span id="year">2026</span> Keona Arneson</p>
+      <p class="footer-tag mono">Hand-coded · no frameworks · no build step</p>
+      <a class="text-link" href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

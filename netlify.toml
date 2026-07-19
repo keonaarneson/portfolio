@@ -1,0 +1,31 @@
+# Netlify configuration — pure static site, no build step.
+# Netlify reads this automatically; in the UI, leave "Build command" empty.
+
+[build]
+  publish = "."
+
+# Sensible security headers for a static site
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+# Static assets (favicon, OG image, project photos) — cache for a week
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+# PDFs get a short cache so a replaced resume shows up quickly
+[[headers]]
+  for = "/resume/*"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/docs/*"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
