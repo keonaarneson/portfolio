@@ -96,9 +96,11 @@ to keep those in step.)
 3. Netlify reads `netlify.toml` automatically — leave **Build command** empty,
    publish directory is `.` — and deploys on every push.
 
-**After the first deploy (one-time):** replace `keona-arneson.netlify.app` with
-your real site URL in `index.html` (canonical link, `og:url`, `og:image`, and the
-JSON-LD `url`). If you later add a custom domain, do the same again.
+**Custom domain:** the site's canonical URL (`index.html` — canonical link, `og:url`,
+`og:image`, JSON-LD `url`) is set to `https://keonaarneson.com/`. In Netlify, add
+this under *Site configuration → Domain management → Add a domain*, then point
+your registrar's DNS at Netlify per their instructions. If the URL ever changes,
+update those same spots in `index.html` to match.
 
 ## Notes
 
