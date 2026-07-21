@@ -33,7 +33,7 @@ const PROJECTS = [
   {
     title: "Kestrel Nest Box Camera",
     status: "",
-    meta: "Vertically Integrated Projects · Boise State · 2026",
+    meta: "Vertically Integrated Project · 2026",
     summary:
       "A low-cost, solar-powered camera system for remote monitoring of American Kestrel nest boxes.",
     description:
@@ -52,7 +52,7 @@ const PROJECTS = [
   {
     title: "Residential PV Study",
     status: "",
-    meta: "Course project · ECE 371",
+    meta: "Course project · 2026",
     summary:
       "Design and economic modeling of a grid-tied residential PV system in NREL's System Advisor Model.",
     description:
@@ -70,7 +70,7 @@ const PROJECTS = [
   {
     title: "Grid-Forming Inverter Survey",
     status: "",
-    meta: "Independent research · 2026",
+    meta: "Personal research · 2026",
     summary:
       "A technical survey of grid-forming inverter capabilities in renewable-heavy power systems.",
     description:
@@ -81,7 +81,7 @@ const PROJECTS = [
     links: [
       { label: "Survey report", href: "docs/grid-forming-inverter-survey.pdf", note: "PDF · 223 KB" },
     ],
-    image: { src: "assets/images/GFM.png", alt: "Title page of the Grid-Forming Inverter Survey report" },
+    image: { src: "assets/images/GFM.png", alt: "First page of the grid-forming inverter survey report"},
   },
 ];
 
@@ -92,14 +92,14 @@ const SKILL_GROUPS = [
   },
   {
     title: "Programming & Software",
-    items: ["Python", "Excel / MS Office", "Salesforce", "GIS", "CRS"],
+    items: ["Python", "MS Office", "Salesforce", "GIS", "CRS", "Altium Designer", "Fusion 360"],
   },
   {
     title: "Hardware & Lab",
-    items: ["Oscilloscope", "Multimeter", "Function generator", "Soldering & breadboarding", "PCB design", "3D modeling"],
+    items: ["Oscilloscope", "Multimeter", "Function Generator", "Soldering", "Breadboarding"],
   },
   {
-    title: "Certifications",
+    title: "Certifications & Licenses",
     items: ["NCEES FE Exam"],
   },
 ];
