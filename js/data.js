@@ -81,7 +81,7 @@ const PROJECTS = [
       "Synthesized 11 peer-reviewed IEEE sources on what grid-forming inverters bring to " +
       "modern grids — voltage balancing, synthetic inertia, and frequency control — plus " +
       "their role in microgrid black-start and islanded operation.",
-    tools: ["Literature review", "IEEE Xplore", "Technical writing"],
+    tools: ["IEEE Xplore", "Technical writing"],
     links: [
       { label: "Survey report", href: "docs/grid-forming-inverter-survey.pdf", note: "PDF · 223 KB" },
     ],
