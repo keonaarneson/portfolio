@@ -27,9 +27,7 @@ const PROJECTS = [
     tools: ["PCB design", "3D modeling", "Embedded sensors"],
     links: [],                      // links appear as "Label (PDF · size)" — see examples below
 
-    /* Image placeholder: drop a photo/schematic in assets/images/, then replace
-       null with:  { src: "assets/images/plant-monitor.jpg", alt: "Describe what's shown" } */
-    image: null,
+    image: { src: "assets/images/PlantMonitoringSystem.png", alt: "Schematic of the Plant Monitoring System's USB power and buck-converter circuit" },
   },
 
   {
@@ -48,7 +46,7 @@ const PROJECTS = [
       { label: "Solar panel sizing", href: "docs/kestrel-solar-panel-sizing.pdf", note: "PDF · 205 KB" },
       { label: "Witty Pi & power bank testing", href: "docs/kestrel-witty-pi-iniu-power-bank.pdf", note: "PDF · 141 KB" },
     ],
-    image: null,
+    image: { src: "assets/images/KestrelNestBoxCamera.png", alt: "Infrared nest-box camera footage of kestrel chicks inside the box" },
   },
 
   {
@@ -66,7 +64,7 @@ const PROJECTS = [
     links: [
       { label: "Final report", href: "docs/residential-pv-study-report.pdf", note: "PDF · 294 KB" },
     ],
-    image: null,
+    image: { src: "assets/images/ResidentialPVStudy.png", alt: "Bar chart comparing modeled monthly AC energy production to electricity load for the residential PV system" },
   },
 
   {
@@ -102,6 +100,6 @@ const SKILL_GROUPS = [
   },
   {
     title: "Certifications",
-    items: ["NCEES FE Exam", "CTECS Workplace Readiness Skills Assessment"],
+    items: ["NCEES FE Exam"],
   },
 ];
