@@ -85,7 +85,7 @@ const PROJECTS = [
     links: [
       { label: "Survey report", href: "docs/grid-forming-inverter-survey.pdf", note: "PDF · 223 KB" },
     ],
-    image: null,
+    image: { src: "assets/images/GFM.png", alt: "Title page of the Grid-Forming Inverter Survey report" },
   },
 ];
 
