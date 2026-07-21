@@ -1,21 +1,20 @@
 # Keona Arneson — Portfolio
 
-Personal portfolio site: projects, skills, and resume for recruiters, grad programs,
-and networking. Deliberately **zero-build**: plain HTML + CSS + a small amount of
+Personal portfolio site: a project-focused showcase for grad programs and
+networking. Deliberately **zero-build**: plain HTML + CSS + a small amount of
 vanilla JavaScript. No frameworks, no npm, no build step — nothing to install,
 nothing that can rot. It will deploy unchanged for years.
 
 ## Structure
 
 ```
-index.html          All layout and static sections (hero, about, resume, contact)
+index.html          All layout and static sections (hero, about, projects, contact)
 styles.css          All styling. Design tokens (colors, fonts) at the top.
 js/data.js          ← EDIT THIS to change content (projects, skills, links)
 js/render.js        Builds project cards & skill groups from data.js
-js/main.js          Theme toggle, mobile nav, scroll animations, copy-email
+js/main.js          Mobile nav, scroll animations, copy-email
 assets/             favicon.svg, og.png (social preview), images/ for project photos
 docs/               Project write-up PDFs
-resume/             Resume PDF
 netlify.toml        Netlify publish settings + caching/security headers
 ```
 
@@ -48,7 +47,7 @@ safely, so `&`, `<`, quotes etc. are fine).
   tools: ["LTspice", "MATLAB"],
   links: [
     { label: "Report", href: "docs/my-report.pdf", note: "PDF · 1.2 MB" },
-    { label: "GitHub repo", href: "https://github.com/keonaarneson/my-repo", note: "" },
+    { label: "Project repo", href: "https://your-host/your-repo", note: "" },
   ],
   image: null,   // see below
 },
@@ -69,12 +68,6 @@ The dashed placeholder disappears automatically.
 
 Edit `SKILL_GROUPS` in `js/data.js` — same idea: groups of plain-text items.
 
-### Replace the resume
-
-Overwrite `resume/Keona-Arneson-Resume.pdf` with the new file, **keeping the same
-filename**. Every button and link keeps working, and the embedded viewer shows the
-new version.
-
 ### Update your links / email
 
 Edit `SITE` at the top of `js/data.js` — the page syncs all header/contact links
@@ -91,7 +84,7 @@ to keep those in step.)
 
 **Option B — Git-connected (recommended long-term: every push auto-deploys)**
 
-1. Push this folder to a GitHub repository.
+1. Push this folder to a Git repository (GitHub, GitLab, or Bitbucket).
 2. In Netlify: *Add new site → Import an existing project* → pick the repo.
 3. Netlify reads `netlify.toml` automatically — leave **Build command** empty,
    publish directory is `.` — and deploys on every push.

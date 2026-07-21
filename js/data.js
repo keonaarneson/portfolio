@@ -9,9 +9,7 @@
 const SITE = {
   name: "Keona Arneson",
   email: "arneson.keona@gmail.com",
-  github: "https://github.com/keonaarneson",
   linkedin: "https://www.linkedin.com/in/keona-arneson/",
-  resume: "resume/Keona-Arneson-Resume.pdf",
 };
 
 const PROJECTS = [

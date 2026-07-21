@@ -48,9 +48,7 @@
   function syncSiteLinks() {
     if (typeof SITE === "undefined") return;
     var map = {
-      github: SITE.github,
       linkedin: SITE.linkedin,
-      resume: SITE.resume,
       email: "mailto:" + SITE.email,
     };
     document.querySelectorAll("[data-site-link]").forEach(function (a) {

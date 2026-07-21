@@ -19,12 +19,7 @@
   [headers.values]
     Cache-Control = "public, max-age=604800"
 
-# PDFs get a short cache so a replaced resume shows up quickly
-[[headers]]
-  for = "/resume/*"
-  [headers.values]
-    Cache-Control = "public, max-age=3600"
-
+# Project write-up PDFs get a short cache so updates show up quickly
 [[headers]]
   for = "/docs/*"
   [headers.values]
