@@ -14,7 +14,7 @@ const SITE = {
 
 const PROJECTS = [
   {
-    title: "Plant Monitoring System",
+    title: "Plant Monitoring System 2.0",
     status: "In progress",          // omit or set to "" for finished projects
     meta: "Personal project · 2026",
     summary:
@@ -28,6 +28,22 @@ const PROJECTS = [
     links: [],                      // links appear as "Label (PDF · size)" — see examples below
 
     image: { src: "assets/images/PlantMonitoringSystem.png", alt: "Schematic of the Plant Monitoring System's USB power and buck-converter circuit" },
+  },
+
+  {
+    title: "FE Prep Web App",
+    status: "In progress",
+    meta: "Personal project · 2026",
+    summary:
+      "A quiz app for practicing FE Electrical exam concepts, with questions I've sourced myself.",
+    description:
+      "Built around two study modes: a quick quiz for fast review and a timed simulation " +
+      "mode that mirrors the real exam format. The app will leverage AI to help build out " +
+      "and expand the question bank.",
+    tools: ["AI", "Web Development"],
+    links: [],
+
+    image: null,
   },
 
   {
