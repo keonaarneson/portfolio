@@ -116,7 +116,7 @@
         linksWrap.appendChild(a);
       });
     } else {
-      linksWrap.appendChild(el("span", { class: "coming-soon", text: "Write-up coming soon" }));
+      linksWrap.appendChild(el("span", { class: "coming-soon", text: p.comingSoonText || "Write-up coming soon" }));
     }
     body.appendChild(linksWrap);
 

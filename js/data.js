@@ -42,6 +42,7 @@ const PROJECTS = [
       "and expand the question bank.",
     tools: [],
     links: [],
+    comingSoonText: "Live website coming soon",
 
     image: null,
   },
