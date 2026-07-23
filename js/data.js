@@ -40,7 +40,7 @@ const PROJECTS = [
       "Built around two study modes: a quick quiz for fast review and a timed simulation " +
       "mode that mirrors the real exam format. The app will leverage AI to help build out " +
       "and expand the question bank.",
-    tools: ["AI", "Web Development"],
+    tools: [],
     links: [],
 
     image: null,
